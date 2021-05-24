@@ -4,6 +4,6 @@ FROM adoptopenjdk/openjdk8:alpine-jre
 
 WORKDIR /opt/app
 
-COPY /docker-spring/target/hello-docker-0.0.1-SNAPSHOT.jar /opt/app/app.jar
+COPY /opt/app/target/hello-docker-0.0.1-SNAPSHOT.jar /opt/app/app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
